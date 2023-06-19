@@ -38,7 +38,56 @@ Informações que são passadas para o componente.
 
 Todas as estilizações partem do JavaCript, por exemplo:
 ```
-  import from 'styles.css'
+  import from 'global.css'
 ```
 
 No React, os escopos de estilização sáo específicos alguns componentes para que um estilização não interfira nas demais. Utilizaremos o `cssModules`. Utilizando cssModules precisamos importar ele nomeado para poder usar nas classes dentro dos componentes.
+
+# CSS Global
+
+Resetar as configurações utilizando técnicas de box model para evitar que os componentes cresçam indevdamente:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+
+Dentro desse mesmo arquivo, criar as variáveis globais das cores: 
+
+```css
+:root {
+  --white: #fff;
+  --gray-100: #e1e1e1;
+  --gray-300: #c4c4cc;
+  --gray-400: #8d8d99;
+  --gray-600: #323238;
+  --gray-700: #29292e;
+  --gray-800: #202024;
+  --gray-900: #121214;
+
+  --green-500: #00875f;
+}
+```
+
+Essas cores irão definir a paleta de cores da aplicação e podem ser usadas globalmente, mantendo uma melhor padronização e facilidade de manutenção.
+
+# Fontes
+
+A fonte utilizada será a **Roboto**, que vem como importação do site do google. AS tags de link com o tipo "preconnect" devem ser postas em primeiro lugar para agilizar o carregamento das fontes.
+
+Logo após, faremos a definição padrão das fontes: 
+
+```css
+body, input, textarea, button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+```
+
+O `sans-serif` significa que caso a fonte não seja carregada o site deve usar uma fonte do sistema que não possua serifa.
+
+O uso de medidas relativas como `rem` devem ser priorizados por conta da acessibilidade que proporcionam ao cliente;
