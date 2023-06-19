@@ -90,4 +90,16 @@ body, input, textarea, button {
 
 O `sans-serif` significa que caso a fonte não seja carregada o site deve usar uma fonte do sistema que não possua serifa.
 
-O uso de medidas relativas como `rem` devem ser priorizados por conta da acessibilidade que proporcionam ao cliente;
+O uso de medidas relativas como `rem` devem ser priorizados por conta da acessibilidade que proporcionam ao cliente.
+
+# Grid
+Na tela será usado display grid da seguint forma:
+
+```css
+display: grid;
+grid-template-columns: 256px 1fr;
+gap: 2rem;
+```
+
+**256px** é a largura da prmieira coluna, já o **fr** representa que a segunda coluna vvai crescer o máximo que conseguir 
+No display grid, o padrão de alinhar os itens é o stretch. A aplicação irá tentar esticar os dois elementos para deixar os dois elementos do mesmo tamanho, por´m isso não pode acontecer, por isso `align-items: flex-start;`, assim ambos ficam grudados ao topo e tem suas alturas individuais.
