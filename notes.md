@@ -121,3 +121,7 @@ AS coisas vão ficar cada vez mais arredondadas conforme o usuário aumenta o ta
 ```
 
 O css acima vai estilizar todo post que tiver um post acima dele
+
+## :focus-within
+
+Quando existir focus em qualquer elemento filho do que está sendo referenciado
