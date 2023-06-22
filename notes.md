@@ -111,3 +111,13 @@ Quando tenho um componente com bordas quadradas dentro de um componente com bord
 ## Não usar rem para border-radius
 
 AS coisas vão ficar cada vez mais arredondadas conforme o usuário aumenta o tamanho sa fonte caso seja definido em rem
+
+# Sinal de **+** no CSS
+
+```css
+.post + .post {
+  
+}
+```
+
+O css acima vai estilizar todo post que tiver um post acima dele
