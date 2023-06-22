@@ -107,3 +107,7 @@ No display grid, o padrão de alinhar os itens é o stretch. A aplicação irá 
 ## Dica com broder radius
 
 Quando tenho um componente com bordas quadradas dentro de um componente com bordas redondas. Basta adicionar `overflow: hidden` ao elemento pai que a borda redonda será aplicada ao componente filho, pois a mesma não será exibida
+
+## Não usar rem para border-radius
+
+AS coisas vão ficar cada vez mais arredondadas conforme o usuário aumenta o tamanho sa fonte caso seja definido em rem

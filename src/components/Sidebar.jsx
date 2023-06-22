@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-
+import { PencilLine } from "phosphor-react"
 import styles from './Sidebar.module.css'
 
 export function Sidebar() {
@@ -13,12 +13,18 @@ export function Sidebar() {
       />
 
       <div className={styles.profile}>
+        <img 
+          className={styles.avatar} 
+          src="https://github.com/gabriel-bianchessi.png" 
+          alt=""
+        />
         <strong>Gabriel Bianchessi</strong>
         <span>Web Developer</span>
       </div>
 
       <footer>
         <a href="#">
+          <PencilLine size={20} />
           Editar seu perfil
         </a>
       </footer>
