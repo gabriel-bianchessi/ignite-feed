@@ -103,3 +103,7 @@ gap: 2rem;
 
 **256px** é a largura da prmieira coluna, já o **fr** representa que a segunda coluna vvai crescer o máximo que conseguir 
 No display grid, o padrão de alinhar os itens é o stretch. A aplicação irá tentar esticar os dois elementos para deixar os dois elementos do mesmo tamanho, por´m isso não pode acontecer, por isso `align-items: flex-start;`, assim ambos ficam grudados ao topo e tem suas alturas individuais.
+
+## Dica com broder radius
+
+Quando tenho um componente com bordas quadradas dentro de um componente com bordas redondas. Basta adicionar `overflow: hidden` ao elemento pai que a borda redonda será aplicada ao componente filho, pois a mesma não será exibida

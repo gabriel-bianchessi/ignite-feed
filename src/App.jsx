@@ -2,6 +2,7 @@
 import React from 'react'
 import { Post } from './Post'
 import { Header } from './components/Header'
+import { Sidebar } from './components/Sidebar'
 import './global.css'
 import styles from './App.module.css'
 
@@ -12,9 +13,7 @@ export function App() {
       <Header />
 
       <div className={styles.wrapper}>
-        <aside>
-          Sidebar
-        </aside>
+        <Sidebar />
         <main>
           <Post
             author="Gabriel Bianchessi"
